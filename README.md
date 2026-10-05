@@ -2,7 +2,7 @@
 
 A recipe discovery application built with React and Material UI, using TheMealDB API to search, filter, and explore recipes.
 
-🔗 **Live Demo:** https://recipe-explorer-tncy57.vercel.app/
+🔗 **Live Demo:** https://recipe-explorer-gilt.vercel.app/
 
 ## ✨ Features
 
