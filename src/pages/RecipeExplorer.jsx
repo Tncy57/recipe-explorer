@@ -83,7 +83,7 @@ export default function RecipeExplorer({
 
   const selectCategory = (category) => {
     setSelectedCountry("");
-    setSelectedCategory(category);
+    setSelectedCategory((curr) => (curr === category ? "" : category));
   };
 
   const selectCountry = (country) => {
@@ -172,7 +172,10 @@ export default function RecipeExplorer({
             maxWidth: 600,
           }}
         >
-          <RecipeCategoryFilter selectCategory={selectCategory} />
+          <RecipeCategoryFilter
+            selectCategory={selectCategory}
+            selectedCategory={selectedCategory}
+          />
         </Box>
 
         {/* Favorites Box */}
@@ -286,7 +289,7 @@ export default function RecipeExplorer({
         </Box>
       )}
 
-       {/* Country Title */}
+      {/* Country Title */}
       {selectedCountry && (
         <Box
           sx={{

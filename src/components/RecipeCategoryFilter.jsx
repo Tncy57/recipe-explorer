@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 
-export default function RecipeCategoryFilter({ selectCategory }) {
-  const [category, setCategory] = useState("");
+export default function RecipeCategoryFilter({ selectCategory, selectedCategory }) {
   const [categoryList, setCategoryList] = useState([]);
 
   useEffect(() => {
@@ -31,7 +30,6 @@ export default function RecipeCategoryFilter({ selectCategory }) {
   }
 
   const handleChange = (selectedCategory) => {
-    setCategory(selectedCategory);
     selectCategory(selectedCategory);
   };
 
@@ -46,7 +44,7 @@ export default function RecipeCategoryFilter({ selectCategory }) {
       }}
     >
       {categoryList.map((c) => {
-        const isSelected = category.trim() === c.category.trim();
+        const isSelected = selectedCategory.trim() === c.category.trim();
 
         return (
           <Button
