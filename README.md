@@ -126,7 +126,7 @@ The project is connected to GitHub, and new commits pushed to the `main` branch 
 
 ### Home
 
-![Recipe Explorer Home](./public/screenshots/home.PNG)
+![Recipe Explorer Home](./public/screenshots/home.png)
 
 ## 👤 Author
 
