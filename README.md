@@ -1,16 +1,135 @@
-# React + Vite
+# Recipe Explorer 🍽️
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A recipe discovery application built with React and Material UI, using TheMealDB API to search, filter, and explore recipes.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** https://recipe-explorer-tncy57.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 🔎 Search recipes by name
+- 🥩 Filter recipes by category
+- 🌍 Explore recipes by country
+- ❤️ Add and remove favorite recipes
+- 📖 Expand recipe cards to view ingredients and cooking instructions
+- 🎥 Open YouTube recipe videos
+- 🖼️ View recipe images in a larger dialog
+- 🔄 Loading, error, and empty states
+- 📱 Responsive design for desktop and mobile
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Built With
 
-## Expanding the Oxlint configuration
+- React
+- Vite
+- Material UI (MUI)
+- JavaScript
+- TheMealDB API
+- Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🧠 What I Practiced
+
+This project helped me practice and strengthen:
+
+- React state management with `useState`
+- Side effects and API requests with `useEffect`
+- Passing data and functions through props
+- Parent-child component communication
+- Conditional rendering
+- Rendering dynamic lists with `.map()`
+- Handling loading, error, and empty states
+- Working with REST APIs
+- Responsive UI design with Material UI
+- Managing favorites and filtered data
+- Deploying a React application with Vercel
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have Node.js installed on your machine.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Tncy57/recipe-explorer.git
+
+```
+
+Navigate to the project directory:
+
+```bash
+cd recipe-explorer
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at the local development URL provided by Vite.
+
+### Production Build
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+## 📡 API
+
+Recipe data is provided by [TheMealDB](https://www.themealdb.com/).
+
+The application uses TheMealDB API for:
+
+- Recipe search
+- Category filtering
+- Country filtering
+- Recipe details
+
+## 📁 Project Structure
+
+```text
+src/
+├── components/
+│   ├── EmptyState.jsx
+│   ├── ErrorState.jsx
+│   ├── LoadingState.jsx
+│   ├── RecipeCard.jsx
+│   ├── RecipeCategoryFilter.jsx
+│   └── RecipeForm.jsx
+│
+├── pages/
+│   ├── Favorites.jsx
+│   └── RecipeExplorer.jsx
+│
+├── App.jsx
+├── main.jsx
+└── theme.js
+```
+
+## 🌐 Deployment
+
+The application is deployed with Vercel.
+
+The project is connected to GitHub, and new commits pushed to the `main` branch automatically trigger a new deployment.
+
+## 📸 Screenshots
+
+### Home
+
+![Recipe Explorer Home](./public/screenshots/home.png)
+
+## 👤 Author
+
+**Tncy57**
+
+GitHub: https://github.com/Tncy57/recipe-explorer
